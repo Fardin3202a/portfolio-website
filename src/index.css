@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* Remove the default autofill background color */
+  input:-webkit-autofill,
+  textarea:-webkit-autofill {
+    background-color: transparent !important;
+    transition: background-color 5000s ease-in-out 0s; /* Prevent background color from changing */
+  }
+
+  /* For Firefox */
+  input:-moz-placeholder-shown,
+  textarea:-moz-placeholder-shown {
+    background-color: transparent !important;
+  }
+
+}
+
+
+
